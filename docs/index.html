@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repositorio Local ProgSalkman</title>
     <!-- Importamos Water.css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
@@ -58,18 +58,7 @@
     <p><small>© 2026 - Repositorio de utilidades técnicas</small></p>
 </footer>
 
-<script>
-    function calc() {
-        // Lógica Ley de Ohm
-        const i = document.getElementById('i_ohm').value;
-        const r = document.getElementById('r_ohm').value;
-        document.getElementById('res_ohm').innerText = (i && r) ? (i * r).toFixed(2) : 0;
-
-        // Lógica Conversión
-        const inch = document.getElementById('inch').value;
-        document.getElementById('res_mm').innerText = inch ? (inch * 25.4).toFixed(2) : 0;
-    }
-</script>
+<script type="module" src="script.js"></script>
 <script type="py" config="./conf.json" src="./main.py"></script>
 </body>
 </html>
