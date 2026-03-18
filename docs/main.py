@@ -3,4 +3,4 @@ from pyscript import when, display
 
 @when("click", "#my-button")
 def handler():
-    display("Button clicked!",target="#my-p")
+    display("Button clicked!",target="#my-d")
